@@ -1,0 +1,1412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="cbAutoTuning_use.Items" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="cbAutoTuning_use.Items1" xml:space="preserve">
+    <value>开启</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cbAutoTuning_use.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 290</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cbAutoTuning_use.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbAutoTuning_use.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="label38.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 296</value>
+  </data>
+  <data name="label38.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>启动自动调谐</value>
+  </data>
+  <data name="cbFreqProg.Items" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="cbFreqProg.Items1" xml:space="preserve">
+    <value>仅接收</value>
+  </data>
+  <data name="cbFreqProg.Items2" xml:space="preserve">
+    <value>接收/发射</value>
+  </data>
+  <data name="cbFreqProg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 462</value>
+  </data>
+  <data name="cbFreqProg.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbFreqProg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbITUchUSE.Items" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="cbITUchUSE.Items1" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="cbITUchUSE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 428</value>
+  </data>
+  <data name="cbITUchUSE.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbITUchUSE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbCrossChOper.Items" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="cbCrossChOper.Items1" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="cbCrossChOper.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 393</value>
+  </data>
+  <data name="cbCrossChOper.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbCrossChOper.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbNMEA_Jack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 358</value>
+  </data>
+  <data name="cbNMEA_Jack.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbNMEA_Jack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbNMEA_ID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 324</value>
+  </data>
+  <data name="cbNMEA_ID.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbNMEA_ID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbLCD_Contrast.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 290</value>
+  </data>
+  <data name="cbLCD_Contrast.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbLCD_Contrast.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbMicAudio_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 255</value>
+  </data>
+  <data name="cbMicAudio_input.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbMicAudio_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbACCMode_input.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 220</value>
+  </data>
+  <data name="cbACCMode_input.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbACCMode_input.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbCW_BreakIn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 186</value>
+  </data>
+  <data name="cbCW_BreakIn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbCW_BreakIn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbFSK_Pol.Items" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="cbFSK_Pol.Items1" xml:space="preserve">
+    <value>反相</value>
+  </data>
+  <data name="cbFSK_Pol.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 152</value>
+  </data>
+  <data name="cbFSK_Pol.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbFSK_Pol.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbFSK_Shift.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 117</value>
+  </data>
+  <data name="cbFSK_Shift.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbFSK_Shift.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cb_NarrowFilter.Items" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="cb_NarrowFilter.Items1" xml:space="preserve">
+    <value>开启</value>
+  </data>
+  <data name="cb_NarrowFilter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 82</value>
+  </data>
+  <data name="cb_NarrowFilter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cb_NarrowFilter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbIndType.Items" xml:space="preserve">
+    <value>信道名称</value>
+  </data>
+  <data name="cbIndType.Items1" xml:space="preserve">
+    <value>仅频率</value>
+  </data>
+  <data name="cbIndType.Items2" xml:space="preserve">
+    <value>频率</value>
+  </data>
+  <data name="cbIndType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 48</value>
+  </data>
+  <data name="cbIndType.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbIndType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 468</value>
+  </data>
+  <data name="label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>频率编程</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 434</value>
+  </data>
+  <data name="label15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>ITU信道</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 399</value>
+  </data>
+  <data name="label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>跨信道操作</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 364</value>
+  </data>
+  <data name="label17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>NMEA 输入端口</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 330</value>
+  </data>
+  <data name="label18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 296</value>
+  </data>
+  <data name="label19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>LCD 亮度</value>
+  </data>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 261</value>
+  </data>
+  <data name="label20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>麦克风音频输入</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 226</value>
+  </data>
+  <data name="label21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>ACC音频输入</value>
+  </data>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 192</value>
+  </data>
+  <data name="label22.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>CW 插入方式</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 158</value>
+  </data>
+  <data name="label23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>FSK 极性</value>
+  </data>
+  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 123</value>
+  </data>
+  <data name="label24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>FSK 偏移频率 [Hz]</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 88</value>
+  </data>
+  <data name="label25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>窄带滤波器</value>
+  </data>
+  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 54</value>
+  </data>
+  <data name="label26.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>显示模式</value>
+  </data>
+  <data name="cbScanSpeed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 496</value>
+  </data>
+  <data name="cbScanSpeed.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbScanSpeed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbScanRef.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 462</value>
+  </data>
+  <data name="cbScanRef.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbScanRef.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbScanType.Items" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="cbScanType.Items1" xml:space="preserve">
+    <value>信道</value>
+  </data>
+  <data name="cbScanType.Items2" xml:space="preserve">
+    <value>信道（自动恢复）</value>
+  </data>
+  <data name="cbScanType.Items3" xml:space="preserve">
+    <value>编程</value>
+  </data>
+  <data name="cbScanType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 428</value>
+  </data>
+  <data name="cbScanType.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbScanType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cb2182sel_atALM.Items" xml:space="preserve">
+    <value>手动</value>
+  </data>
+  <data name="cb2182sel_atALM.Items1" xml:space="preserve">
+    <value>自动</value>
+  </data>
+  <data name="cb2182sel_atALM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 393</value>
+  </data>
+  <data name="cb2182sel_atALM.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cb2182sel_atALM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbAlmTim.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 358</value>
+  </data>
+  <data name="cbAlmTim.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbAlmTim.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbAutoTuningType.Items1" xml:space="preserve">
+    <value>切换频率</value>
+  </data>
+  <data name="cbAutoTuningType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 324</value>
+  </data>
+  <data name="cbAutoTuningType.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbAutoTuningType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbATU.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 255</value>
+  </data>
+  <data name="cbATU.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbATU.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbITU_Direction.Items" xml:space="preserve">
+    <value>正常（船载）</value>
+  </data>
+  <data name="cbITU_Direction.Items1" xml:space="preserve">
+    <value>反向（海岸）</value>
+  </data>
+  <data name="cbITU_Direction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 220</value>
+  </data>
+  <data name="cbITU_Direction.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbITU_Direction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbITU_FSKch.Items" xml:space="preserve">
+    <value>禁用</value>
+  </data>
+  <data name="cbITU_FSKch.Items1" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="cbITU_FSKch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 186</value>
+  </data>
+  <data name="cbITU_FSKch.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbITU_FSKch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbMaxUserCH.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 152</value>
+  </data>
+  <data name="cbMaxUserCH.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbMaxUserCH.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbModeSel2182.Items" xml:space="preserve">
+    <value>允许</value>
+  </data>
+  <data name="cbModeSel2182.Items1" xml:space="preserve">
+    <value>禁止</value>
+  </data>
+  <data name="cbModeSel2182.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 117</value>
+  </data>
+  <data name="cbModeSel2182.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbModeSel2182.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbTxPwrSel.Items" xml:space="preserve">
+    <value>高</value>
+  </data>
+  <data name="cbTxPwrSel.Items1" xml:space="preserve">
+    <value>中/高</value>
+  </data>
+  <data name="cbTxPwrSel.Items2" xml:space="preserve">
+    <value>低/中/高</value>
+  </data>
+  <data name="cbTxPwrSel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 82</value>
+  </data>
+  <data name="cbTxPwrSel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbTxPwrSel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="cbTxMeter.Items" xml:space="preserve">
+    <value>射频功率</value>
+  </data>
+  <data name="cbTxMeter.Items1" xml:space="preserve">
+    <value>天线电流</value>
+  </data>
+  <data name="cbTxMeter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 48</value>
+  </data>
+  <data name="cbTxMeter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbTxMeter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 26</value>
+  </data>
+  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 502</value>
+  </data>
+  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>扫描速度 [step]</value>
+  </data>
+  <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 468</value>
+  </data>
+  <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>扫描参考时间[毫秒]</value>
+  </data>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 434</value>
+  </data>
+  <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>扫描模式</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 399</value>
+  </data>
+  <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>自动切换应急频率</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 364</value>
+  </data>
+  <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>报警时间[秒]</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 330</value>
+  </data>
+  <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>自动调谐模式</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 261</value>
+  </data>
+  <data name="label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>自动天调型号</value>
+  </data>
+  <data name="lable6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lable6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 226</value>
+  </data>
+  <data name="lable6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lable6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="lable6.Text" xml:space="preserve">
+    <value>ITU信号方向</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 192</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>开启ITU FSK信道</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 158</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>最大用户信道数</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 123</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>2182频率模式调整</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 88</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>发射功率选项</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 54</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 18</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>发射指示</value>
+  </data>
+  <data name="tabCommon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 28</value>
+  </data>
+  <data name="tabCommon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabCommon.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabCommon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>832, 568</value>
+  </data>
+  <data name="tabCommon.Text" xml:space="preserve">
+    <value>通用设置</value>
+  </data>
+  <data name="dgUserCh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 9</value>
+  </data>
+  <data name="dgUserCh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="dgUserCh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>810, 585</value>
+  </data>
+  <data name="tabUserCH.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 28</value>
+  </data>
+  <data name="tabUserCH.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabUserCH.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabUserCH.Size" type="System.Drawing.Size, System.Drawing">
+    <value>832, 568</value>
+  </data>
+  <data name="tabUserCH.Text" xml:space="preserve">
+    <value>用户信道</value>
+  </data>
+  <data name="dgITUSimp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 9</value>
+  </data>
+  <data name="dgITUSimp.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="dgITUSimp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>810, 585</value>
+  </data>
+  <data name="tabITUSimpCH.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 28</value>
+  </data>
+  <data name="tabITUSimpCH.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabITUSimpCH.Size" type="System.Drawing.Size, System.Drawing">
+    <value>832, 568</value>
+  </data>
+  <data name="tabITUSimpCH.Text" xml:space="preserve">
+    <value>ITU同频信道</value>
+  </data>
+  <data name="dgFreqRange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 9</value>
+  </data>
+  <data name="dgFreqRange.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="dgFreqRange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>810, 585</value>
+  </data>
+  <data name="tabFreqRange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 28</value>
+  </data>
+  <data name="tabFreqRange.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabFreqRange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>832, 568</value>
+  </data>
+  <data name="tabFreqRange.Text" xml:space="preserve">
+    <value>频率范围</value>
+  </data>
+  <data name="tbInfo2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 99</value>
+  </data>
+  <data name="tbInfo2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tbInfo2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>625, 28</value>
+  </data>
+  <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 104</value>
+  </data>
+  <data name="label37.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 18</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>备注 2</value>
+  </data>
+  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 34</value>
+  </data>
+  <data name="label36.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 18</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>备注 1</value>
+  </data>
+  <data name="tbInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 30</value>
+  </data>
+  <data name="tbInfo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tbInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>625, 28</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 393</value>
+  </data>
+  <data name="groupBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 150</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>备注信息</value>
+  </data>
+  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 34</value>
+  </data>
+  <data name="label35.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>显示</value>
+  </data>
+  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 34</value>
+  </data>
+  <data name="label34.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>发射</value>
+  </data>
+  <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 34</value>
+  </data>
+  <data name="label33.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 18</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>接收</value>
+  </data>
+  <data name="cbJ3E.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 66</value>
+  </data>
+  <data name="cbJ3E.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbJ3E.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 26</value>
+  </data>
+  <data name="cbA1A_Tx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 314</value>
+  </data>
+  <data name="cbA1A_Tx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbA1A_Tx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 70</value>
+  </data>
+  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 18</value>
+  </data>
+  <data name="cbA1A_Rx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 314</value>
+  </data>
+  <data name="cbA1A_Rx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbA1A_Rx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 111</value>
+  </data>
+  <data name="label27.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 18</value>
+  </data>
+  <data name="cbFSK_Tx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 273</value>
+  </data>
+  <data name="cbFSK_Tx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbFSK_Tx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 152</value>
+  </data>
+  <data name="label28.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 18</value>
+  </data>
+  <data name="cbFSK_Rx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 273</value>
+  </data>
+  <data name="cbFSK_Rx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbFSK_Rx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 192</value>
+  </data>
+  <data name="label31.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 18</value>
+  </data>
+  <data name="cbJ2B_Tx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 232</value>
+  </data>
+  <data name="cbJ2B_Tx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbJ2B_Tx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 232</value>
+  </data>
+  <data name="label30.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 18</value>
+  </data>
+  <data name="cbJ2B_Rx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 232</value>
+  </data>
+  <data name="cbJ2B_Rx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbJ2B_Rx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 273</value>
+  </data>
+  <data name="label29.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 18</value>
+  </data>
+  <data name="cbLSB_Tx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 192</value>
+  </data>
+  <data name="cbLSB_Tx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbLSB_Tx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 314</value>
+  </data>
+  <data name="label32.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 18</value>
+  </data>
+  <data name="cbLSB_Rx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 192</value>
+  </data>
+  <data name="cbLSB_Rx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbLSB_Rx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="cbR3E.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 106</value>
+  </data>
+  <data name="cbR3E.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbR3E.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 26</value>
+  </data>
+  <data name="cbH3E_Tx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 152</value>
+  </data>
+  <data name="cbH3E_Tx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbH3E_Tx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="cbH3E.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 147</value>
+  </data>
+  <data name="cbH3E.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbH3E.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 26</value>
+  </data>
+  <data name="cbH3E_Rx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 152</value>
+  </data>
+  <data name="cbH3E_Rx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbH3E_Rx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="cbLSB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 188</value>
+  </data>
+  <data name="cbLSB.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbLSB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 26</value>
+  </data>
+  <data name="cbR3E_Tx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 111</value>
+  </data>
+  <data name="cbR3E_Tx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbR3E_Tx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="cbJ2B.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 228</value>
+  </data>
+  <data name="cbJ2B.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbJ2B.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 26</value>
+  </data>
+  <data name="cbR3E_Rx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 111</value>
+  </data>
+  <data name="cbR3E_Rx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbR3E_Rx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="cbFSK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 268</value>
+  </data>
+  <data name="cbFSK.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbFSK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 26</value>
+  </data>
+  <data name="cbJ3E_Tx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 70</value>
+  </data>
+  <data name="cbJ3E_Tx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbJ3E_Tx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="cbA1A.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 309</value>
+  </data>
+  <data name="cbA1A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbA1A.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 26</value>
+  </data>
+  <data name="cbJ3E_Rx.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 70</value>
+  </data>
+  <data name="cbJ3E_Rx.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="cbJ3E_Rx.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 21</value>
+  </data>
+  <data name="gbMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 26</value>
+  </data>
+  <data name="gbMode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="gbMode.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="gbMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 357</value>
+  </data>
+  <data name="gbMode.Text" xml:space="preserve">
+    <value>模式</value>
+  </data>
+  <data name="tabMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 28</value>
+  </data>
+  <data name="tabMode.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>832, 568</value>
+  </data>
+  <data name="tabMode.Text" xml:space="preserve">
+    <value>模式及备注</value>
+  </data>
+  <data name="tabs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 42</value>
+  </data>
+  <data name="tabs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>840, 600</value>
+  </data>
+  <data name="tsFileName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 24</value>
+  </data>
+  <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 645</value>
+  </data>
+  <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>876, 31</value>
+  </data>
+  <data name="MenuFileLoad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 34</value>
+  </data>
+  <data name="MenuFileLoad.Text" xml:space="preserve">
+    <value>载入配置(&amp;L)</value>
+  </data>
+  <data name="MenuFileSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 34</value>
+  </data>
+  <data name="MenuFileSave.Text" xml:space="preserve">
+    <value>保存(&amp;S)</value>
+  </data>
+  <data name="MenuFileSaveAs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 34</value>
+  </data>
+  <data name="MenuFileSaveAs.Text" xml:space="preserve">
+    <value>另存为(&amp;A)</value>
+  </data>
+  <data name="MenuExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 34</value>
+  </data>
+  <data name="MenuExit.Text" xml:space="preserve">
+    <value>退出(&amp;E)</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 6</value>
+  </data>
+  <data name="MenuFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 28</value>
+  </data>
+  <data name="MenuFile.Text" xml:space="preserve">
+    <value>文件(&amp;F)</value>
+  </data>
+  <data name="menuUnitkHz.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 34</value>
+  </data>
+  <data name="menuUnitkHz.Text" xml:space="preserve">
+    <value>kHz(&amp;K)</value>
+  </data>
+  <data name="menuUnitMHz.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 34</value>
+  </data>
+  <data name="menuUnitMHz.Text" xml:space="preserve">
+    <value>MHz(&amp;M)</value>
+  </data>
+  <data name="freqUnitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 34</value>
+  </data>
+  <data name="freqUnitToolStripMenuItem.Text" xml:space="preserve">
+    <value>频率单位(&amp;U)</value>
+  </data>
+  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 34</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>英文(&amp;E)</value>
+  </data>
+  <data name="chineseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 34</value>
+  </data>
+  <data name="chineseToolStripMenuItem.Text" xml:space="preserve">
+    <value>中文(&amp;C)</value>
+  </data>
+  <data name="LanguageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 34</value>
+  </data>
+  <data name="LanguageToolStripMenuItem.Text" xml:space="preserve">
+    <value>语言(&amp;L)</value>
+  </data>
+  <data name="menuOptions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 28</value>
+  </data>
+  <data name="menuOptions.Text" xml:space="preserve">
+    <value>选项(&amp;O)</value>
+  </data>
+  <data name="MenuClone2TR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 34</value>
+  </data>
+  <data name="MenuClone2TR.Text" xml:space="preserve">
+    <value>PC -&gt; 电台(&amp;P)</value>
+  </data>
+  <data name="MenuClone2PC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 34</value>
+  </data>
+  <data name="MenuClone2PC.Text" xml:space="preserve">
+    <value>PC &lt;- 电台(&amp;T)</value>
+  </data>
+  <data name="MenuClonePort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 34</value>
+  </data>
+  <data name="MenuClonePort.Text" xml:space="preserve">
+    <value>串口(&amp;S)</value>
+  </data>
+  <data name="cloneToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 28</value>
+  </data>
+  <data name="cloneToolStripMenuItem.Text" xml:space="preserve">
+    <value>编程(&amp;C)</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>876, 32</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 18</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>876, 676</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+</root>
