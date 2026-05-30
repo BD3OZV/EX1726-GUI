@@ -220,6 +220,7 @@ namespace EX1726_GUI
                 dtUserCH.Columns.Add("COMMENT");
 
                 dtUserCH.Columns[0].ColumnName = "CH No.";
+                dtUserCH.Columns[0].ReadOnly = true;
                 dtUserCH.Columns[1].ColumnName = "Rx FREQ. [kHz]";
                 dtUserCH.Columns[2].ColumnName = "Tx FREQ. [kHz]";
                 dtUserCH.Columns[3].ColumnName = "MODE";
@@ -299,6 +300,7 @@ namespace EX1726_GUI
                 dtITUSimp.Columns.Add("COMMENT");
 
                 dtITUSimp.Columns[0].ColumnName = "CH No.";
+                dtITUSimp.Columns[0].ReadOnly = true;
                 dtITUSimp.Columns[1].ColumnName = "FREQ. [kHz]";
                 dtITUSimp.Columns[2].ColumnName = "MODE";
                 dtITUSimp.Columns[3].ColumnName = "COMMENT";
@@ -360,6 +362,7 @@ namespace EX1726_GUI
                 dtFreqRange.Columns.Add("HigherEdge");
 
                 dtFreqRange.Columns[0].ColumnName = "ITEM";
+                dtFreqRange.Columns[0].ReadOnly = true;
                 dtFreqRange.Columns[1].ColumnName = "Lower Edge [kHz]";
                 dtFreqRange.Columns[2].ColumnName = "Higher Edge [kHz]";
 
@@ -950,8 +953,6 @@ namespace EX1726_GUI
         {
             // Rx8     M2   COMMENT-14      TX8
             //02182000 02 454D455247454E 02182000
-
-            dtUserCH.Rows[id][0] = id;
             dtUserCH.Rows[id][1] = getFreqkHz(userCH.Substring(0, 8));
             dtUserCH.Rows[id][2] = getFreqkHz(userCH.Substring(24, 8));
             if (userCH[9] == '2')
@@ -965,9 +966,7 @@ namespace EX1726_GUI
         {
             // Rx8     M2   COMMENT-14      TX8
             //02182000 02 454D455247454E 02182000
-            string[] Prefix = { "4-", "6-", "8-", "12-", "16-", "18-", "22-", "25-" };
 
-            dtITUSimp.Rows[id][0] = Prefix[id / 9] + (id % 9 + 1).ToString();
             dtITUSimp.Rows[id][1] = getFreqkHz(ITU_CH.Substring(0, 8));
 
             if (ITU_CH[9] == '2')
@@ -981,9 +980,6 @@ namespace EX1726_GUI
         {
             // LowRange   HighRange
             //00030000 - 29999900[RX         30.000 - 29999.900]
-            string[] Prefix = { "RX", "Tx  1st", "Tx  2nd", "Tx  3rd", "Tx  4th", "Tx  5th", "Tx  6th", "Tx  7th", "Tx  8th", "Tx  9th", "Tx 10th", "Tx 11th", "ITU 4M", "ITU 6M", "ITU 8M", "ITU 12M", "ITU 16M", "ITU 18M", "ITU 22M", "ITU 25M" };
-
-            dtFreqRange.Rows[id][0] = Prefix[id];
             dtFreqRange.Rows[id][1] = getFreqkHz(freq.Substring(0, 8));
             dtFreqRange.Rows[id][2] = getFreqkHz(freq.Substring(8, 8));
         }
@@ -1732,5 +1728,51 @@ namespace EX1726_GUI
 
             }
         }
+
+        private void DataGridView_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView dgv = sender as DataGridView;
+
+            if (dgv == null) return;
+
+            DataGridViewCell cell = dgv[e.ColumnIndex, e.RowIndex];
+
+            if (cell.Value == DBNull.Value)
+            {
+                cell.Value = string.Empty;
+            }
+        }
+
+        private void DataGridView_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode != Keys.Delete) return;
+
+            DataGridView dgv = sender as DataGridView;
+            if (dgv == null) return;
+
+            // 正在编辑时，让系统自己处理（删字符）
+            if (dgv.CurrentCell != null && dgv.CurrentCell.IsInEditMode)
+                return;
+
+            e.SuppressKeyPress = true; // 取消默认行为（删行）
+
+            // 遍历所有选中单元格，清空
+            foreach (DataGridViewCell cell in dgv.SelectedCells)
+            {
+                if (cell.ReadOnly) continue;
+
+                if (cell is DataGridViewTextBoxCell)
+                {
+                    // 直接设为空字符串，避免 DBNull
+                    cell.Value = string.Empty;
+                }
+                else if (cell is DataGridViewComboBoxCell)
+                {
+                    if (((DataGridViewComboBoxCell)cell).Items.Count > 0)
+                        cell.Value = ((DataGridViewComboBoxCell)cell).Items[0];
+                }
+            }
+        }
+
     }
 }
