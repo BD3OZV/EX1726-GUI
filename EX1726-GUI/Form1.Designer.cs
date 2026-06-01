@@ -178,18 +178,19 @@
             // 
             // tabs
             // 
+            resources.ApplyResources(this.tabs, "tabs");
             this.tabs.Controls.Add(this.tabCommon);
             this.tabs.Controls.Add(this.tabUserCH);
             this.tabs.Controls.Add(this.tabITUSimpCH);
             this.tabs.Controls.Add(this.tabFreqRange);
             this.tabs.Controls.Add(this.tabMode);
-            resources.ApplyResources(this.tabs, "tabs");
             this.tabs.Name = "tabs";
             this.tabs.SelectedIndex = 0;
             this.tabs.SizeChanged += new System.EventHandler(this.tabs_SizeChanged);
             // 
             // tabCommon
             // 
+            resources.ApplyResources(this.tabCommon, "tabCommon");
             this.tabCommon.Controls.Add(this.cbAutoTuning_use);
             this.tabCommon.Controls.Add(this.label38);
             this.tabCommon.Controls.Add(this.cbFreqProg);
@@ -244,19 +245,18 @@
             this.tabCommon.Controls.Add(this.label3);
             this.tabCommon.Controls.Add(this.label2);
             this.tabCommon.Controls.Add(this.label1);
-            resources.ApplyResources(this.tabCommon, "tabCommon");
             this.tabCommon.Name = "tabCommon";
             this.tabCommon.UseVisualStyleBackColor = true;
             this.tabCommon.Click += new System.EventHandler(this.tabCommon_Click);
             // 
             // cbAutoTuning_use
             // 
+            resources.ApplyResources(this.cbAutoTuning_use, "cbAutoTuning_use");
             this.cbAutoTuning_use.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAutoTuning_use.FormattingEnabled = true;
             this.cbAutoTuning_use.Items.AddRange(new object[] {
             resources.GetString("cbAutoTuning_use.Items"),
             resources.GetString("cbAutoTuning_use.Items1")});
-            resources.ApplyResources(this.cbAutoTuning_use, "cbAutoTuning_use");
             this.cbAutoTuning_use.Name = "cbAutoTuning_use";
             // 
             // label38
@@ -266,47 +266,48 @@
             // 
             // cbFreqProg
             // 
+            resources.ApplyResources(this.cbFreqProg, "cbFreqProg");
             this.cbFreqProg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFreqProg.FormattingEnabled = true;
             this.cbFreqProg.Items.AddRange(new object[] {
             resources.GetString("cbFreqProg.Items"),
             resources.GetString("cbFreqProg.Items1"),
             resources.GetString("cbFreqProg.Items2")});
-            resources.ApplyResources(this.cbFreqProg, "cbFreqProg");
             this.cbFreqProg.Name = "cbFreqProg";
             // 
             // cbITUchUSE
             // 
+            resources.ApplyResources(this.cbITUchUSE, "cbITUchUSE");
             this.cbITUchUSE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbITUchUSE.FormattingEnabled = true;
             this.cbITUchUSE.Items.AddRange(new object[] {
             resources.GetString("cbITUchUSE.Items"),
             resources.GetString("cbITUchUSE.Items1")});
-            resources.ApplyResources(this.cbITUchUSE, "cbITUchUSE");
             this.cbITUchUSE.Name = "cbITUchUSE";
             // 
             // cbCrossChOper
             // 
+            resources.ApplyResources(this.cbCrossChOper, "cbCrossChOper");
             this.cbCrossChOper.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCrossChOper.FormattingEnabled = true;
             this.cbCrossChOper.Items.AddRange(new object[] {
             resources.GetString("cbCrossChOper.Items"),
             resources.GetString("cbCrossChOper.Items1")});
-            resources.ApplyResources(this.cbCrossChOper, "cbCrossChOper");
             this.cbCrossChOper.Name = "cbCrossChOper";
             // 
             // cbNMEA_Jack
             // 
+            resources.ApplyResources(this.cbNMEA_Jack, "cbNMEA_Jack");
             this.cbNMEA_Jack.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNMEA_Jack.FormattingEnabled = true;
             this.cbNMEA_Jack.Items.AddRange(new object[] {
             resources.GetString("cbNMEA_Jack.Items"),
             resources.GetString("cbNMEA_Jack.Items1")});
-            resources.ApplyResources(this.cbNMEA_Jack, "cbNMEA_Jack");
             this.cbNMEA_Jack.Name = "cbNMEA_Jack";
             // 
             // cbNMEA_ID
             // 
+            resources.ApplyResources(this.cbNMEA_ID, "cbNMEA_ID");
             this.cbNMEA_ID.FormattingEnabled = true;
             this.cbNMEA_ID.Items.AddRange(new object[] {
             resources.GetString("cbNMEA_ID.Items"),
@@ -408,11 +409,11 @@
             resources.GetString("cbNMEA_ID.Items96"),
             resources.GetString("cbNMEA_ID.Items97"),
             resources.GetString("cbNMEA_ID.Items98")});
-            resources.ApplyResources(this.cbNMEA_ID, "cbNMEA_ID");
             this.cbNMEA_ID.Name = "cbNMEA_ID";
             // 
             // cbLCD_Contrast
             // 
+            resources.ApplyResources(this.cbLCD_Contrast, "cbLCD_Contrast");
             this.cbLCD_Contrast.FormattingEnabled = true;
             this.cbLCD_Contrast.Items.AddRange(new object[] {
             resources.GetString("cbLCD_Contrast.Items"),
@@ -425,80 +426,79 @@
             resources.GetString("cbLCD_Contrast.Items7"),
             resources.GetString("cbLCD_Contrast.Items8"),
             resources.GetString("cbLCD_Contrast.Items9")});
-            resources.ApplyResources(this.cbLCD_Contrast, "cbLCD_Contrast");
             this.cbLCD_Contrast.Name = "cbLCD_Contrast";
             // 
             // cbMicAudio_input
             // 
+            resources.ApplyResources(this.cbMicAudio_input, "cbMicAudio_input");
             this.cbMicAudio_input.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMicAudio_input.FormattingEnabled = true;
             this.cbMicAudio_input.Items.AddRange(new object[] {
             resources.GetString("cbMicAudio_input.Items"),
             resources.GetString("cbMicAudio_input.Items1")});
-            resources.ApplyResources(this.cbMicAudio_input, "cbMicAudio_input");
             this.cbMicAudio_input.Name = "cbMicAudio_input";
             // 
             // cbACCMode_input
             // 
+            resources.ApplyResources(this.cbACCMode_input, "cbACCMode_input");
             this.cbACCMode_input.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbACCMode_input.FormattingEnabled = true;
             this.cbACCMode_input.Items.AddRange(new object[] {
             resources.GetString("cbACCMode_input.Items"),
             resources.GetString("cbACCMode_input.Items1")});
-            resources.ApplyResources(this.cbACCMode_input, "cbACCMode_input");
             this.cbACCMode_input.Name = "cbACCMode_input";
             // 
             // cbCW_BreakIn
             // 
+            resources.ApplyResources(this.cbCW_BreakIn, "cbCW_BreakIn");
             this.cbCW_BreakIn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCW_BreakIn.FormattingEnabled = true;
             this.cbCW_BreakIn.Items.AddRange(new object[] {
             resources.GetString("cbCW_BreakIn.Items"),
             resources.GetString("cbCW_BreakIn.Items1"),
             resources.GetString("cbCW_BreakIn.Items2")});
-            resources.ApplyResources(this.cbCW_BreakIn, "cbCW_BreakIn");
             this.cbCW_BreakIn.Name = "cbCW_BreakIn";
             // 
             // cbFSK_Pol
             // 
+            resources.ApplyResources(this.cbFSK_Pol, "cbFSK_Pol");
             this.cbFSK_Pol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFSK_Pol.FormattingEnabled = true;
             this.cbFSK_Pol.Items.AddRange(new object[] {
             resources.GetString("cbFSK_Pol.Items"),
             resources.GetString("cbFSK_Pol.Items1")});
-            resources.ApplyResources(this.cbFSK_Pol, "cbFSK_Pol");
             this.cbFSK_Pol.Name = "cbFSK_Pol";
             // 
             // cbFSK_Shift
             // 
+            resources.ApplyResources(this.cbFSK_Shift, "cbFSK_Shift");
             this.cbFSK_Shift.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFSK_Shift.FormattingEnabled = true;
             this.cbFSK_Shift.Items.AddRange(new object[] {
             resources.GetString("cbFSK_Shift.Items"),
             resources.GetString("cbFSK_Shift.Items1"),
             resources.GetString("cbFSK_Shift.Items2")});
-            resources.ApplyResources(this.cbFSK_Shift, "cbFSK_Shift");
             this.cbFSK_Shift.Name = "cbFSK_Shift";
             // 
             // cb_NarrowFilter
             // 
+            resources.ApplyResources(this.cb_NarrowFilter, "cb_NarrowFilter");
             this.cb_NarrowFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_NarrowFilter.FormattingEnabled = true;
             this.cb_NarrowFilter.Items.AddRange(new object[] {
             resources.GetString("cb_NarrowFilter.Items"),
             resources.GetString("cb_NarrowFilter.Items1")});
-            resources.ApplyResources(this.cb_NarrowFilter, "cb_NarrowFilter");
             this.cb_NarrowFilter.Name = "cb_NarrowFilter";
             // 
             // cbIndType
             // 
+            resources.ApplyResources(this.cbIndType, "cbIndType");
             this.cbIndType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbIndType.FormattingEnabled = true;
             this.cbIndType.Items.AddRange(new object[] {
             resources.GetString("cbIndType.Items"),
             resources.GetString("cbIndType.Items1"),
             resources.GetString("cbIndType.Items2")});
-            resources.ApplyResources(this.cbIndType, "cbIndType");
             this.cbIndType.Name = "cbIndType";
             // 
             // label14
@@ -538,8 +538,8 @@
             // 
             // label21
             // 
-            this.label21.ForeColor = System.Drawing.SystemColors.ControlText;
             resources.ApplyResources(this.label21, "label21");
+            this.label21.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label21.Name = "label21";
             // 
             // label22
@@ -564,12 +564,13 @@
             // 
             // label26
             // 
-            this.label26.ForeColor = System.Drawing.SystemColors.ControlText;
             resources.ApplyResources(this.label26, "label26");
+            this.label26.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label26.Name = "label26";
             // 
             // cbScanSpeed
             // 
+            resources.ApplyResources(this.cbScanSpeed, "cbScanSpeed");
             this.cbScanSpeed.FormattingEnabled = true;
             this.cbScanSpeed.Items.AddRange(new object[] {
             resources.GetString("cbScanSpeed.Items"),
@@ -582,11 +583,11 @@
             resources.GetString("cbScanSpeed.Items7"),
             resources.GetString("cbScanSpeed.Items8"),
             resources.GetString("cbScanSpeed.Items9")});
-            resources.ApplyResources(this.cbScanSpeed, "cbScanSpeed");
             this.cbScanSpeed.Name = "cbScanSpeed";
             // 
             // cbScanRef
             // 
+            resources.ApplyResources(this.cbScanRef, "cbScanRef");
             this.cbScanRef.FormattingEnabled = true;
             this.cbScanRef.Items.AddRange(new object[] {
             resources.GetString("cbScanRef.Items"),
@@ -600,11 +601,11 @@
             resources.GetString("cbScanRef.Items8"),
             resources.GetString("cbScanRef.Items9"),
             resources.GetString("cbScanRef.Items10")});
-            resources.ApplyResources(this.cbScanRef, "cbScanRef");
             this.cbScanRef.Name = "cbScanRef";
             // 
             // cbScanType
             // 
+            resources.ApplyResources(this.cbScanType, "cbScanType");
             this.cbScanType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbScanType.FormattingEnabled = true;
             this.cbScanType.Items.AddRange(new object[] {
@@ -612,21 +613,21 @@
             resources.GetString("cbScanType.Items1"),
             resources.GetString("cbScanType.Items2"),
             resources.GetString("cbScanType.Items3")});
-            resources.ApplyResources(this.cbScanType, "cbScanType");
             this.cbScanType.Name = "cbScanType";
             // 
             // cb2182sel_atALM
             // 
+            resources.ApplyResources(this.cb2182sel_atALM, "cb2182sel_atALM");
             this.cb2182sel_atALM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb2182sel_atALM.FormattingEnabled = true;
             this.cb2182sel_atALM.Items.AddRange(new object[] {
             resources.GetString("cb2182sel_atALM.Items"),
             resources.GetString("cb2182sel_atALM.Items1")});
-            resources.ApplyResources(this.cb2182sel_atALM, "cb2182sel_atALM");
             this.cb2182sel_atALM.Name = "cb2182sel_atALM";
             // 
             // cbAlmTim
             // 
+            resources.ApplyResources(this.cbAlmTim, "cbAlmTim");
             this.cbAlmTim.FormattingEnabled = true;
             this.cbAlmTim.Items.AddRange(new object[] {
             resources.GetString("cbAlmTim.Items"),
@@ -728,52 +729,52 @@
             resources.GetString("cbAlmTim.Items96"),
             resources.GetString("cbAlmTim.Items97"),
             resources.GetString("cbAlmTim.Items98")});
-            resources.ApplyResources(this.cbAlmTim, "cbAlmTim");
             this.cbAlmTim.Name = "cbAlmTim";
             // 
             // cbAutoTuningType
             // 
+            resources.ApplyResources(this.cbAutoTuningType, "cbAutoTuningType");
             this.cbAutoTuningType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAutoTuningType.FormattingEnabled = true;
             this.cbAutoTuningType.Items.AddRange(new object[] {
             resources.GetString("cbAutoTuningType.Items"),
             resources.GetString("cbAutoTuningType.Items1")});
-            resources.ApplyResources(this.cbAutoTuningType, "cbAutoTuningType");
             this.cbAutoTuningType.Name = "cbAutoTuningType";
             // 
             // cbATU
             // 
+            resources.ApplyResources(this.cbATU, "cbATU");
             this.cbATU.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbATU.FormattingEnabled = true;
             this.cbATU.Items.AddRange(new object[] {
             resources.GetString("cbATU.Items"),
             resources.GetString("cbATU.Items1"),
             resources.GetString("cbATU.Items2")});
-            resources.ApplyResources(this.cbATU, "cbATU");
             this.cbATU.Name = "cbATU";
             // 
             // cbITU_Direction
             // 
+            resources.ApplyResources(this.cbITU_Direction, "cbITU_Direction");
             this.cbITU_Direction.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbITU_Direction.FormattingEnabled = true;
             this.cbITU_Direction.Items.AddRange(new object[] {
             resources.GetString("cbITU_Direction.Items"),
             resources.GetString("cbITU_Direction.Items1")});
-            resources.ApplyResources(this.cbITU_Direction, "cbITU_Direction");
             this.cbITU_Direction.Name = "cbITU_Direction";
             // 
             // cbITU_FSKch
             // 
+            resources.ApplyResources(this.cbITU_FSKch, "cbITU_FSKch");
             this.cbITU_FSKch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbITU_FSKch.FormattingEnabled = true;
             this.cbITU_FSKch.Items.AddRange(new object[] {
             resources.GetString("cbITU_FSKch.Items"),
             resources.GetString("cbITU_FSKch.Items1")});
-            resources.ApplyResources(this.cbITU_FSKch, "cbITU_FSKch");
             this.cbITU_FSKch.Name = "cbITU_FSKch";
             // 
             // cbMaxUserCH
             // 
+            resources.ApplyResources(this.cbMaxUserCH, "cbMaxUserCH");
             this.cbMaxUserCH.FormattingEnabled = true;
             this.cbMaxUserCH.Items.AddRange(new object[] {
             resources.GetString("cbMaxUserCH.Items"),
@@ -936,38 +937,37 @@
             resources.GetString("cbMaxUserCH.Items157"),
             resources.GetString("cbMaxUserCH.Items158"),
             resources.GetString("cbMaxUserCH.Items159")});
-            resources.ApplyResources(this.cbMaxUserCH, "cbMaxUserCH");
             this.cbMaxUserCH.Name = "cbMaxUserCH";
             // 
             // cbModeSel2182
             // 
+            resources.ApplyResources(this.cbModeSel2182, "cbModeSel2182");
             this.cbModeSel2182.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbModeSel2182.FormattingEnabled = true;
             this.cbModeSel2182.Items.AddRange(new object[] {
             resources.GetString("cbModeSel2182.Items"),
             resources.GetString("cbModeSel2182.Items1")});
-            resources.ApplyResources(this.cbModeSel2182, "cbModeSel2182");
             this.cbModeSel2182.Name = "cbModeSel2182";
             // 
             // cbTxPwrSel
             // 
+            resources.ApplyResources(this.cbTxPwrSel, "cbTxPwrSel");
             this.cbTxPwrSel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTxPwrSel.FormattingEnabled = true;
             this.cbTxPwrSel.Items.AddRange(new object[] {
             resources.GetString("cbTxPwrSel.Items"),
             resources.GetString("cbTxPwrSel.Items1"),
             resources.GetString("cbTxPwrSel.Items2")});
-            resources.ApplyResources(this.cbTxPwrSel, "cbTxPwrSel");
             this.cbTxPwrSel.Name = "cbTxPwrSel";
             // 
             // cbTxMeter
             // 
+            resources.ApplyResources(this.cbTxMeter, "cbTxMeter");
             this.cbTxMeter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTxMeter.FormattingEnabled = true;
             this.cbTxMeter.Items.AddRange(new object[] {
             resources.GetString("cbTxMeter.Items"),
             resources.GetString("cbTxMeter.Items1")});
-            resources.ApplyResources(this.cbTxMeter, "cbTxMeter");
             this.cbTxMeter.Name = "cbTxMeter";
             // 
             // label13
@@ -982,14 +982,14 @@
             // 
             // label11
             // 
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
             resources.ApplyResources(this.label11, "label11");
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label11.Name = "label11";
             // 
             // label10
             // 
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
             resources.ApplyResources(this.label10, "label10");
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label10.Name = "label10";
             // 
             // label9
@@ -999,8 +999,8 @@
             // 
             // label8
             // 
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
             resources.ApplyResources(this.label8, "label8");
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label8.Name = "label8";
             // 
             // label7
@@ -1010,8 +1010,8 @@
             // 
             // lable6
             // 
-            this.lable6.ForeColor = System.Drawing.SystemColors.ControlText;
             resources.ApplyResources(this.lable6, "lable6");
+            this.lable6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lable6.Name = "lable6";
             // 
             // label5
@@ -1026,8 +1026,8 @@
             // 
             // label3
             // 
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
             resources.ApplyResources(this.label3, "label3");
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label3.Name = "label3";
             // 
             // label2
@@ -1037,19 +1037,20 @@
             // 
             // label1
             // 
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Name = "label1";
             // 
             // tabUserCH
             // 
-            this.tabUserCH.Controls.Add(this.dgUserCh);
             resources.ApplyResources(this.tabUserCH, "tabUserCH");
+            this.tabUserCH.Controls.Add(this.dgUserCh);
             this.tabUserCH.Name = "tabUserCH";
             this.tabUserCH.UseVisualStyleBackColor = true;
             // 
             // dgUserCh
             // 
+            resources.ApplyResources(this.dgUserCh, "dgUserCh");
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1067,7 +1068,6 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgUserCh.DefaultCellStyle = dataGridViewCellStyle2;
-            resources.ApplyResources(this.dgUserCh, "dgUserCh");
             this.dgUserCh.Name = "dgUserCh";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -1083,13 +1083,14 @@
             // 
             // tabITUSimpCH
             // 
-            this.tabITUSimpCH.Controls.Add(this.dgITUSimp);
             resources.ApplyResources(this.tabITUSimpCH, "tabITUSimpCH");
+            this.tabITUSimpCH.Controls.Add(this.dgITUSimp);
             this.tabITUSimpCH.Name = "tabITUSimpCH";
             this.tabITUSimpCH.UseVisualStyleBackColor = true;
             // 
             // dgITUSimp
             // 
+            resources.ApplyResources(this.dgITUSimp, "dgITUSimp");
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1107,7 +1108,6 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgITUSimp.DefaultCellStyle = dataGridViewCellStyle5;
-            resources.ApplyResources(this.dgITUSimp, "dgITUSimp");
             this.dgITUSimp.Name = "dgITUSimp";
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
@@ -1123,13 +1123,14 @@
             // 
             // tabFreqRange
             // 
-            this.tabFreqRange.Controls.Add(this.dgFreqRange);
             resources.ApplyResources(this.tabFreqRange, "tabFreqRange");
+            this.tabFreqRange.Controls.Add(this.dgFreqRange);
             this.tabFreqRange.Name = "tabFreqRange";
             this.tabFreqRange.UseVisualStyleBackColor = true;
             // 
             // dgFreqRange
             // 
+            resources.ApplyResources(this.dgFreqRange, "dgFreqRange");
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle7.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1147,7 +1148,6 @@
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgFreqRange.DefaultCellStyle = dataGridViewCellStyle8;
-            resources.ApplyResources(this.dgFreqRange, "dgFreqRange");
             this.dgFreqRange.Name = "dgFreqRange";
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
@@ -1163,19 +1163,19 @@
             // 
             // tabMode
             // 
+            resources.ApplyResources(this.tabMode, "tabMode");
             this.tabMode.Controls.Add(this.groupBox1);
             this.tabMode.Controls.Add(this.gbMode);
-            resources.ApplyResources(this.tabMode, "tabMode");
             this.tabMode.Name = "tabMode";
             this.tabMode.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.tbInfo2);
             this.groupBox1.Controls.Add(this.label37);
             this.groupBox1.Controls.Add(this.label36);
             this.groupBox1.Controls.Add(this.tbInfo);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -1201,6 +1201,7 @@
             // 
             // gbMode
             // 
+            resources.ApplyResources(this.gbMode, "gbMode");
             this.gbMode.Controls.Add(this.label35);
             this.gbMode.Controls.Add(this.label34);
             this.gbMode.Controls.Add(this.label33);
@@ -1232,7 +1233,6 @@
             this.gbMode.Controls.Add(this.cbJ3E_Tx);
             this.gbMode.Controls.Add(this.cbA1A);
             this.gbMode.Controls.Add(this.cbJ3E_Rx);
-            resources.ApplyResources(this.gbMode, "gbMode");
             this.gbMode.Name = "gbMode";
             this.gbMode.TabStop = false;
             // 
@@ -1253,12 +1253,12 @@
             // 
             // cbJ3E
             // 
+            resources.ApplyResources(this.cbJ3E, "cbJ3E");
             this.cbJ3E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbJ3E.FormattingEnabled = true;
             this.cbJ3E.Items.AddRange(new object[] {
             resources.GetString("cbJ3E.Items"),
             resources.GetString("cbJ3E.Items1")});
-            resources.ApplyResources(this.cbJ3E, "cbJ3E");
             this.cbJ3E.Name = "cbJ3E";
             // 
             // cbA1A_Tx
@@ -1358,11 +1358,11 @@
             // 
             // cbR3E
             // 
+            resources.ApplyResources(this.cbR3E, "cbR3E");
             this.cbR3E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbR3E.FormattingEnabled = true;
             this.cbR3E.Items.AddRange(new object[] {
             resources.GetString("cbR3E.Items")});
-            resources.ApplyResources(this.cbR3E, "cbR3E");
             this.cbR3E.Name = "cbR3E";
             // 
             // cbH3E_Tx
@@ -1375,12 +1375,12 @@
             // 
             // cbH3E
             // 
+            resources.ApplyResources(this.cbH3E, "cbH3E");
             this.cbH3E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbH3E.FormattingEnabled = true;
             this.cbH3E.Items.AddRange(new object[] {
             resources.GetString("cbH3E.Items"),
             resources.GetString("cbH3E.Items1")});
-            resources.ApplyResources(this.cbH3E, "cbH3E");
             this.cbH3E.Name = "cbH3E";
             // 
             // cbH3E_Rx
@@ -1394,11 +1394,11 @@
             // 
             // cbLSB
             // 
+            resources.ApplyResources(this.cbLSB, "cbLSB");
             this.cbLSB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbLSB.FormattingEnabled = true;
             this.cbLSB.Items.AddRange(new object[] {
             resources.GetString("cbLSB.Items")});
-            resources.ApplyResources(this.cbLSB, "cbLSB");
             this.cbLSB.Name = "cbLSB";
             // 
             // cbR3E_Tx
@@ -1409,12 +1409,12 @@
             // 
             // cbJ2B
             // 
+            resources.ApplyResources(this.cbJ2B, "cbJ2B");
             this.cbJ2B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbJ2B.FormattingEnabled = true;
             this.cbJ2B.Items.AddRange(new object[] {
             resources.GetString("cbJ2B.Items"),
             resources.GetString("cbJ2B.Items1")});
-            resources.ApplyResources(this.cbJ2B, "cbJ2B");
             this.cbJ2B.Name = "cbJ2B";
             // 
             // cbR3E_Rx
@@ -1426,12 +1426,12 @@
             // 
             // cbFSK
             // 
+            resources.ApplyResources(this.cbFSK, "cbFSK");
             this.cbFSK.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFSK.FormattingEnabled = true;
             this.cbFSK.Items.AddRange(new object[] {
             resources.GetString("cbFSK.Items"),
             resources.GetString("cbFSK.Items1")});
-            resources.ApplyResources(this.cbFSK, "cbFSK");
             this.cbFSK.Name = "cbFSK";
             // 
             // cbJ3E_Tx
@@ -1444,12 +1444,12 @@
             // 
             // cbA1A
             // 
+            resources.ApplyResources(this.cbA1A, "cbA1A");
             this.cbA1A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbA1A.FormattingEnabled = true;
             this.cbA1A.Items.AddRange(new object[] {
             resources.GetString("cbA1A.Items"),
             resources.GetString("cbA1A.Items1")});
-            resources.ApplyResources(this.cbA1A, "cbA1A");
             this.cbA1A.Name = "cbA1A";
             // 
             // cbJ3E_Rx
@@ -1462,36 +1462,37 @@
             // 
             // statusStrip1
             // 
+            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsFileName,
             this.prgbar});
-            resources.ApplyResources(this.statusStrip1, "statusStrip1");
             this.statusStrip1.Name = "statusStrip1";
             // 
             // tsFileName
             // 
-            this.tsFileName.Name = "tsFileName";
             resources.ApplyResources(this.tsFileName, "tsFileName");
+            this.tsFileName.Name = "tsFileName";
             // 
             // prgbar
             // 
-            this.prgbar.Name = "prgbar";
             resources.ApplyResources(this.prgbar, "prgbar");
+            this.prgbar.Name = "prgbar";
             // 
             // menuStrip1
             // 
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuFile,
             this.menuOptions,
             this.cloneToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
             // MenuFile
             // 
+            resources.ApplyResources(this.MenuFile, "MenuFile");
             this.MenuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuFileLoad,
             this.MenuFileSave,
@@ -1499,110 +1500,109 @@
             this.MenuExit,
             this.toolStripSeparator1});
             this.MenuFile.Name = "MenuFile";
-            resources.ApplyResources(this.MenuFile, "MenuFile");
             // 
             // MenuFileLoad
             // 
-            this.MenuFileLoad.Name = "MenuFileLoad";
             resources.ApplyResources(this.MenuFileLoad, "MenuFileLoad");
+            this.MenuFileLoad.Name = "MenuFileLoad";
             this.MenuFileLoad.Click += new System.EventHandler(this.MenuFileLoad_Click);
             // 
             // MenuFileSave
             // 
-            this.MenuFileSave.Name = "MenuFileSave";
             resources.ApplyResources(this.MenuFileSave, "MenuFileSave");
+            this.MenuFileSave.Name = "MenuFileSave";
             this.MenuFileSave.Click += new System.EventHandler(this.MenuFileSave_Click);
             // 
             // MenuFileSaveAs
             // 
-            this.MenuFileSaveAs.Name = "MenuFileSaveAs";
             resources.ApplyResources(this.MenuFileSaveAs, "MenuFileSaveAs");
+            this.MenuFileSaveAs.Name = "MenuFileSaveAs";
             this.MenuFileSaveAs.Click += new System.EventHandler(this.MenuFileSaveAs_Click);
             // 
             // MenuExit
             // 
-            this.MenuExit.Name = "MenuExit";
             resources.ApplyResources(this.MenuExit, "MenuExit");
+            this.MenuExit.Name = "MenuExit";
             this.MenuExit.Click += new System.EventHandler(this.MenuExit_Click);
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
             // 
             // menuOptions
             // 
+            resources.ApplyResources(this.menuOptions, "menuOptions");
             this.menuOptions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.freqUnitToolStripMenuItem,
             this.LanguageToolStripMenuItem});
             this.menuOptions.Name = "menuOptions";
-            resources.ApplyResources(this.menuOptions, "menuOptions");
             // 
             // freqUnitToolStripMenuItem
             // 
+            resources.ApplyResources(this.freqUnitToolStripMenuItem, "freqUnitToolStripMenuItem");
             this.freqUnitToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuUnitkHz,
             this.menuUnitMHz});
             this.freqUnitToolStripMenuItem.Name = "freqUnitToolStripMenuItem";
-            resources.ApplyResources(this.freqUnitToolStripMenuItem, "freqUnitToolStripMenuItem");
             // 
             // menuUnitkHz
             // 
-            this.menuUnitkHz.Name = "menuUnitkHz";
             resources.ApplyResources(this.menuUnitkHz, "menuUnitkHz");
+            this.menuUnitkHz.Name = "menuUnitkHz";
             this.menuUnitkHz.Click += new System.EventHandler(this.menuUnitkHz_Click);
             // 
             // menuUnitMHz
             // 
-            this.menuUnitMHz.Name = "menuUnitMHz";
             resources.ApplyResources(this.menuUnitMHz, "menuUnitMHz");
+            this.menuUnitMHz.Name = "menuUnitMHz";
             this.menuUnitMHz.Click += new System.EventHandler(this.menuUnitMHz_Click);
             // 
             // LanguageToolStripMenuItem
             // 
+            resources.ApplyResources(this.LanguageToolStripMenuItem, "LanguageToolStripMenuItem");
             this.LanguageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem,
             this.chineseToolStripMenuItem});
             this.LanguageToolStripMenuItem.Name = "LanguageToolStripMenuItem";
-            resources.ApplyResources(this.LanguageToolStripMenuItem, "LanguageToolStripMenuItem");
             // 
             // englishToolStripMenuItem
             // 
-            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
             resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // chineseToolStripMenuItem
             // 
-            this.chineseToolStripMenuItem.Name = "chineseToolStripMenuItem";
             resources.ApplyResources(this.chineseToolStripMenuItem, "chineseToolStripMenuItem");
+            this.chineseToolStripMenuItem.Name = "chineseToolStripMenuItem";
             this.chineseToolStripMenuItem.Click += new System.EventHandler(this.chineseToolStripMenuItem_Click);
             // 
             // cloneToolStripMenuItem
             // 
+            resources.ApplyResources(this.cloneToolStripMenuItem, "cloneToolStripMenuItem");
             this.cloneToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuClone2TR,
             this.MenuClone2PC,
             this.MenuClonePort});
             this.cloneToolStripMenuItem.Name = "cloneToolStripMenuItem";
-            resources.ApplyResources(this.cloneToolStripMenuItem, "cloneToolStripMenuItem");
             // 
             // MenuClone2TR
             // 
-            this.MenuClone2TR.Name = "MenuClone2TR";
             resources.ApplyResources(this.MenuClone2TR, "MenuClone2TR");
+            this.MenuClone2TR.Name = "MenuClone2TR";
             this.MenuClone2TR.Click += new System.EventHandler(this.MenuClone2TR_Click);
             // 
             // MenuClone2PC
             // 
-            this.MenuClone2PC.Name = "MenuClone2PC";
             resources.ApplyResources(this.MenuClone2PC, "MenuClone2PC");
+            this.MenuClone2PC.Name = "MenuClone2PC";
             this.MenuClone2PC.Click += new System.EventHandler(this.MenuClone2PC_Click);
             // 
             // MenuClonePort
             // 
-            this.MenuClonePort.Name = "MenuClonePort";
             resources.ApplyResources(this.MenuClonePort, "MenuClonePort");
+            this.MenuClonePort.Name = "MenuClonePort";
             // 
             // serialTimer
             // 

@@ -139,43 +139,72 @@ namespace EX1726_GUI
             }
         }
 
+
         private void frmEX1726_Load(object sender, EventArgs e)
         {
             menuUnitMHz.Checked = Properties.Settings.Default.UnitMHz;
             menuUnitkHz.Checked = !menuUnitMHz.Checked;
             ScanCommPort();
             RefreshFileHistory();
+            //先尝试读取上次的文件
+            if (Properties.Settings.Default.LastFile1 != null && Properties.Settings.Default.LastFile1 != "")
+            {
+                if (ReadFile(Properties.Settings.Default.LastFile1) == false)
+                {
+                    MessageBox.Show("Error opening last used configuration file. Will try to open default configuration.",
+                                    "Error", MessageBoxButtons.OK);
+                }
+            }
+            if (CurrentFile == "")
+            {
+                string defaultFile = AppContext.BaseDirectory + "Config\\ChinaAmateur.ini";
 
-            
-            cbJ3E.SelectedIndex = 1;
-            cbR3E.SelectedIndex = 0;
-            cbH3E.SelectedIndex = 1;
-            cbLSB.SelectedIndex = 0;
-            cbJ2B.SelectedIndex = 0;
-            cbFSK.SelectedIndex = 0;
-            cbA1A.SelectedIndex = 1;
+                if (ReadFile(defaultFile))
+                {
+                    AppendFileHistory(defaultFile);
+                }
+                else
+                {
+                    var dr = MessageBox.Show("Error opening default configuration file. Do you want to manually select a file? If you skip, you must read configuration from the radio then modify it.",
+                                             "Error", MessageBoxButtons.YesNo);
+                    if (dr == DialogResult.Yes)
+                    {
+                        SelectAndReadFile();
+                    }
+                    else
+                    {
+                        cbJ3E.SelectedIndex = 1;
+                        cbR3E.SelectedIndex = 0;
+                        cbH3E.SelectedIndex = 1;
+                        cbLSB.SelectedIndex = 0;
+                        cbJ2B.SelectedIndex = 0;
+                        cbFSK.SelectedIndex = 0;
+                        cbA1A.SelectedIndex = 1;
 
-            cbTxMeter.SelectedIndex = 0;
-            cbTxPwrSel.SelectedIndex = 2;
-            cbModeSel2182.SelectedIndex = 1;
-            cbITU_FSKch.SelectedIndex = 1;
-            cbITU_Direction.SelectedIndex = 0;
-            cbATU.SelectedIndex = 0;
-            cbAutoTuning_use.SelectedIndex = 0;
-            cbAutoTuningType.SelectedIndex = 0;
-            cb2182sel_atALM.SelectedIndex = 0;
-            cbScanType.SelectedIndex = 1;
-            cbIndType.SelectedIndex = 0;
-            cb_NarrowFilter.SelectedIndex = 0;
-            cbFSK_Shift.SelectedIndex = 0;
-            cbFSK_Pol.SelectedIndex = 0;
-            cbCW_BreakIn.SelectedIndex = 2;
-            cbACCMode_input.SelectedIndex = 0;
-            cbMicAudio_input.SelectedIndex = 0;
-            cbNMEA_Jack.SelectedIndex = 0;
-            cbCrossChOper.SelectedIndex = 0;
-            cbITUchUSE.SelectedIndex = 1;
-            cbFreqProg.SelectedIndex = 1;
+                        cbTxMeter.SelectedIndex = 0;
+                        cbTxPwrSel.SelectedIndex = 2;
+                        cbModeSel2182.SelectedIndex = 1;
+                        cbITU_FSKch.SelectedIndex = 1;
+                        cbITU_Direction.SelectedIndex = 0;
+                        cbATU.SelectedIndex = 0;
+                        cbAutoTuning_use.SelectedIndex = 0;
+                        cbAutoTuningType.SelectedIndex = 0;
+                        cb2182sel_atALM.SelectedIndex = 0;
+                        cbScanType.SelectedIndex = 1;
+                        cbIndType.SelectedIndex = 0;
+                        cb_NarrowFilter.SelectedIndex = 0;
+                        cbFSK_Shift.SelectedIndex = 0;
+                        cbFSK_Pol.SelectedIndex = 0;
+                        cbCW_BreakIn.SelectedIndex = 2;
+                        cbACCMode_input.SelectedIndex = 0;
+                        cbMicAudio_input.SelectedIndex = 0;
+                        cbNMEA_Jack.SelectedIndex = 0;
+                        cbCrossChOper.SelectedIndex = 0;
+                        cbITUchUSE.SelectedIndex = 1;
+                        cbFreqProg.SelectedIndex = 1;
+                    }
+                }
+            }
 
 
         }
@@ -212,7 +241,7 @@ namespace EX1726_GUI
             if (dtUserCH == null)
             {
                 dtUserCH = new DataTable();
-
+                dtUserCH.DefaultView.AllowNew = false;
                 dtUserCH.Columns.Add("ID");
                 dtUserCH.Columns.Add("LowLimit");
                 dtUserCH.Columns.Add("HighLimit");
@@ -294,6 +323,7 @@ namespace EX1726_GUI
             {
                 dtITUSimp = new DataTable();
 
+                dtITUSimp.DefaultView.AllowNew = false;
                 dtITUSimp.Columns.Add("CH");
                 dtITUSimp.Columns.Add("Freq");
                 dtITUSimp.Columns.Add("MODE");
@@ -351,12 +381,14 @@ namespace EX1726_GUI
         }
         private void InitFreqRangeDataGrid()
         {
+            dgFreqRange.Columns.Clear(); 
+            string[] Prefix = { "RX", "Tx  1st", "Tx  2nd", "Tx  3rd", "Tx  4th", "Tx  5th", "Tx  6th", "Tx  7th", "Tx  8th", "Tx  9th", "Tx 10th", "Tx 11th", "ITU 4M", "ITU 6M", "ITU 8M", "ITU 12M", "ITU 16M", "ITU 18M", "ITU 22M", "ITU 25M" };
 
-            dgFreqRange.Columns.Clear();
             if (dtFreqRange == null)
             {
                 dtFreqRange = new DataTable();
 
+                dtFreqRange.DefaultView.AllowNew = false;
                 dtFreqRange.Columns.Add("ITEM");
                 dtFreqRange.Columns.Add("LowerEdge");
                 dtFreqRange.Columns.Add("HigherEdge");
@@ -371,7 +403,7 @@ namespace EX1726_GUI
 
                 for (int i = 0; i < 20; i++)
                 {
-                    dtFreqRange.Rows.Add(i.ToString(), "", "");
+                    dtFreqRange.Rows.Add(Prefix[i], "", "");
                 }
             }
             dgFreqRange.AutoGenerateColumns = false;
@@ -421,15 +453,15 @@ namespace EX1726_GUI
             //560, 400
             //540, 390
             dgFreqRange.Width = tabs.Size.Width - 20;
-            dgFreqRange.Height = tabs.Size.Height - 10;
+            dgFreqRange.Height = tabs.Size.Height - 20;
 
 
             dgITUSimp.Width = tabs.Size.Width - 20;
-            dgITUSimp.Height = tabs.Size.Height - 10;
+            dgITUSimp.Height = tabs.Size.Height - 20;
 
 
             dgUserCh.Width = tabs.Size.Width - 20;
-            dgUserCh.Height = tabs.Size.Height - 10;
+            dgUserCh.Height = tabs.Size.Height - 22;
         }
 
         public static string BytesToHEXString(byte[] bytes, bool split = true)
@@ -876,27 +908,9 @@ namespace EX1726_GUI
         }
         static string CurrentFile = "";
 
-        private bool ReadFile(string filePath)
+        private bool ParseICF(List<string> icfFile)
         {
-            if (!File.Exists(filePath))
-                return false;
-
-            FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
-            StreamReader sr = new StreamReader(fileStream);
-            List<string> icfFile = new List<string>();
             string ParsedString = "";
-            while (true)
-            {
-                var line = sr.ReadLine();
-                if (line == null)
-                    break;
-                else if (line == "")
-                    continue;
-                else
-                {
-                    icfFile.Add(line);
-                }
-            }
             if (icfFile[0] != "16320001")
             {
                 MessageBox.Show("Invalid File!");
@@ -921,13 +935,39 @@ namespace EX1726_GUI
             }
 
             ICF_to_Form(ParsedString);
+            return true;
+        }
+        private bool ReadFile(string filePath)
+        {
+            if (!File.Exists(filePath))
+                return false;
+
+            FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+            StreamReader sr = new StreamReader(fileStream);
+            List<string> icfFile = new List<string>();
+            while (true)
+            {
+                var line = sr.ReadLine();
+                if (line == null)
+                    break;
+                else if (line == "")
+                    continue;
+                else
+                {
+                    icfFile.Add(line);
+                }
+            }
+            
             sr.Close();
             fileStream.Close();
 
-            tsFileName.Text = filePath.Split('\\').Last();
-            CurrentFile = filePath;
-
-            return true;
+            if(ParseICF(icfFile))
+            { 
+                tsFileName.Text = filePath.Split('\\').Last();
+                CurrentFile = filePath;
+                return true;
+            }
+            return false;
         }
         string getFreqkHz(string freq)
         {
@@ -955,10 +995,14 @@ namespace EX1726_GUI
             //02182000 02 454D455247454E 02182000
             dtUserCH.Rows[id][1] = getFreqkHz(userCH.Substring(0, 8));
             dtUserCH.Rows[id][2] = getFreqkHz(userCH.Substring(24, 8));
-            if (userCH[9] == '2')
-                dtUserCH.Rows[id][3] = "AM";
-            else if (userCH[9] == '0')
-                dtUserCH.Rows[id][3] = "USB";
+
+            List<string> Modes = new List<string>() { "USB", "R3E", "AM", "LSB", "J2B", "FSK", "CW" };
+
+            int index = (userCH[9]-0x30);
+            if ((index > 6)||(index < 0))
+                index = 0;
+
+            dtUserCH.Rows[id][3] = Modes[index];
             dtUserCH.Rows[id][4] = BytesToASCIIString(HexString2Bytes(userCH.Substring(10, 14))).TrimEnd();
         }
 
@@ -1230,18 +1274,29 @@ namespace EX1726_GUI
 
 
         }
-        private void AppendFileHistort(string path)
+        private void AppendFileHistory(string path)
         {
-            if (path == Properties.Settings.Default.LastFile1 ||
-                path == Properties.Settings.Default.LastFile2 ||
-                path == Properties.Settings.Default.LastFile3)
+            if (string.IsNullOrWhiteSpace(path))
                 return;
+            if (path == Properties.Settings.Default.LastFile1)
+            {
+                return;
+            }
+            else if (path == Properties.Settings.Default.LastFile2)
+            {
+                Properties.Settings.Default.LastFile2 = Properties.Settings.Default.LastFile3;
+                Properties.Settings.Default.LastFile3 = "";
+            }
+            else if (path == Properties.Settings.Default.LastFile3)
+            {
+                Properties.Settings.Default.LastFile3 = "";
+            }
 
             Properties.Settings.Default.LastFile3 = Properties.Settings.Default.LastFile2;
             Properties.Settings.Default.LastFile2 = Properties.Settings.Default.LastFile1;
             Properties.Settings.Default.LastFile1 = path;
-            Properties.Settings.Default.Save();
 
+            Properties.Settings.Default.Save();
             RefreshFileHistory();
         }
 
@@ -1261,8 +1316,13 @@ namespace EX1726_GUI
                 RefreshFileHistory();
                 MessageBox.Show("File[" + path + "] invalid. Please select another file！");
             }
+            else
+            {
+                AppendFileHistory(path);
+            }
         }
-        private void MenuFileLoad_Click(object sender, EventArgs e)
+
+        private void SelectAndReadFile()
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Title = "Select Config File";
@@ -1272,10 +1332,13 @@ namespace EX1726_GUI
             {
                 if (ReadFile(openFileDialog.FileName))
                 {
-                    AppendFileHistort(openFileDialog.FileName);
+                    AppendFileHistory(openFileDialog.FileName);
                 }
             }
-
+        }
+        private void MenuFileLoad_Click(object sender, EventArgs e)
+        {
+            SelectAndReadFile();
         }
 
 
@@ -1345,21 +1408,17 @@ namespace EX1726_GUI
                 {
                     MessageBox.Show("Config Saved to：" + saveFileDialog.FileName + "Failed!!!");
                 }
+                else
+                {
+                    if (ReadFile(saveFileDialog.FileName))
+                    {
+                        AppendFileHistory(saveFileDialog.FileName);
+                    }
+                }
             }
         }
 
-        private void debugToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (!ReadFile(Properties.Settings.Default.LastFile1))
-            {
-                MessageBox.Show("ERR");
-            }
-            if (!SaveFile("E:\\调试软件\\EX1726-GUI\\EX1726-GUI\\bin\\Debug\\test.ini"))
-            {
-                MessageBox.Show("Config Saved to：E:\\调试软件\\EX1726-GUI\\EX1726-GUI\\bin\\Debug\\test.ini Failed!!!");
-            }
 
-        }
 
         private void cbR3E_Rx_CheckedChanged(object sender, EventArgs e)
         {
@@ -1631,7 +1690,7 @@ namespace EX1726_GUI
             {
                 if (RxData.Count == 0)
                 {
-                    MessageBox.Show("未收到数据，请检查串口！");
+                    MessageBox.Show("No data received. Please check the serial port.","Error", MessageBoxButtons.OK);
                     serialTimer.Stop();
                 }
                 else if (RxData.Count >= 78)
@@ -1742,37 +1801,93 @@ namespace EX1726_GUI
                 cell.Value = string.Empty;
             }
         }
-
-        private void DataGridView_KeyDown(object sender, KeyEventArgs e)
+        private void PasteClipboardToDataGridView()
         {
-            if (e.KeyCode != Keys.Delete) return;
-
-            DataGridView dgv = sender as DataGridView;
-            if (dgv == null) return;
-
-            // 正在编辑时，让系统自己处理（删字符）
-            if (dgv.CurrentCell != null && dgv.CurrentCell.IsInEditMode)
+            // 检查剪贴板是否有文本
+            if (!Clipboard.ContainsText())
                 return;
 
-            e.SuppressKeyPress = true; // 取消默认行为（删行）
+            string text = Clipboard.GetText();
+            // 拆分行为多行
+            string[] lines = text.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None);
 
-            // 遍历所有选中单元格，清空
-            foreach (DataGridViewCell cell in dgv.SelectedCells)
+            // 获取当前选中的开始位置
+            int startRow = dgUserCh.CurrentCell?.RowIndex ?? 0;
+            int startCol = dgUserCh.CurrentCell?.ColumnIndex ?? 0;
+
+            // 遍历粘贴的行
+            for (int i = 0; i < lines.Length; i++)
             {
-                if (cell.ReadOnly) continue;
+                string line = lines[i].Trim();
+                if (string.IsNullOrEmpty(line))
+                    continue;
 
-                if (cell is DataGridViewTextBoxCell)
+                // 计算当前要粘贴的行号
+                int currentRow = startRow + i;
+
+                // ====================== 关键修改 ======================
+                // 如果超出最后一行 → 直接跳过，不新增，舍弃
+                if (currentRow >= dgUserCh.Rows.Count)
+                    continue;
+                // ======================================================
+
+                // 拆分列（Excel 复制出来是 \t 分隔）
+                string[] cellValues = line.Split('\t');
+
+                // 遍历列
+                for (int j = 0; j < cellValues.Length; j++)
                 {
-                    // 直接设为空字符串，避免 DBNull
-                    cell.Value = string.Empty;
-                }
-                else if (cell is DataGridViewComboBoxCell)
-                {
-                    if (((DataGridViewComboBoxCell)cell).Items.Count > 0)
-                        cell.Value = ((DataGridViewComboBoxCell)cell).Items[0];
+                    int currentCol = startCol + j;
+
+                    // 超出列数 → 跳过
+                    if (currentCol >= dgUserCh.Columns.Count)
+                        break;
+
+                    // 只读列不赋值
+                    var cell = dgUserCh.Rows[currentRow].Cells[currentCol];
+                    if (!cell.ReadOnly)
+                    {
+                        cell.Value = cellValues[j];
+                    }
                 }
             }
         }
+        private void DataGridView_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
 
+                DataGridView dgv = sender as DataGridView;
+                if (dgv == null) return;
+
+                // 正在编辑时，让系统自己处理（删字符）
+                if (dgv.CurrentCell != null && dgv.CurrentCell.IsInEditMode)
+                    return;
+
+                e.SuppressKeyPress = true; // 取消默认行为（删行）
+
+                // 遍历所有选中单元格，清空
+                foreach (DataGridViewCell cell in dgv.SelectedCells)
+                {
+                    if (cell.ReadOnly) continue;
+
+                    if (cell is DataGridViewTextBoxCell)
+                    {
+                        // 直接设为空字符串，避免 DBNull
+                        cell.Value = string.Empty;
+                    }
+                    else if (cell is DataGridViewComboBoxCell)
+                    {
+                        if (((DataGridViewComboBoxCell)cell).Items.Count > 0)
+                            cell.Value = ((DataGridViewComboBoxCell)cell).Items[0];
+                    }
+                }
+            }
+            else if (e.Control && e.KeyCode == Keys.V)
+            {
+                PasteClipboardToDataGridView();
+                e.Handled = true; // 阻止默认处理
+            }
+        }
     }
 }
